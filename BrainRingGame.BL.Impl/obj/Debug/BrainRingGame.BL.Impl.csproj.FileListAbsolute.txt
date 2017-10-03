@@ -1,0 +1,11 @@
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Impl.dll
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Impl.pdb
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Abstract.dll
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Abstract.dll
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Abstract.pdb
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Abstract.pdb
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.csprojResolveAssemblyReference.cache
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.dll
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.pdb
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Impl.dll
+C:\Users\Student_PC\Documents\Visual Studio 2015\Projects\BrainRingGame\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Impl.pdb
