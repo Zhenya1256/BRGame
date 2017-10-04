@@ -52,11 +52,20 @@
     <Compile Include="ViewModalForUserControls\VMSetting.cs" />
     <Compile Include="ViewModalForUserControls\VMStartPage.cs" />
     <Compile Include="ViewModelForWindow\VMMainWindow.cs" />
+    <Compile Include="ViewModelForWindow\VMRandomComannds.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BrainRingGame.BL.Impl\BrainRingGame.BL.Impl.csproj">
+      <Project>{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}</Project>
+      <Name>BrainRingGame.BL.Impl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BrainRingGame.Entity.Abstract\BrainRingGame.Entity.Abstract.csproj">
       <Project>{F4B4F3DC-58B5-4F1B-A092-85BC43D231EE}</Project>
       <Name>BrainRingGame.Entity.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrainRingGame.Entity.Impl\BrainRingGame.Entity.Impl.csproj">
+      <Project>{99204F5A-26A7-4187-87A9-CF7A61EBEAA0}</Project>
+      <Name>BrainRingGame.Entity.Impl</Name>
     </ProjectReference>
     <ProjectReference Include="..\BrainRingGame.HelpWindowForms\BrainRingGame.HelpWindowForms.csproj">
       <Project>{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}</Project>

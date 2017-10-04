@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,6 +104,18 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BrainRingGame.BL.Impl\BrainRingGame.BL.Impl.csproj">
+      <Project>{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}</Project>
+      <Name>BrainRingGame.BL.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrainRingGame.Entity.Abstract\BrainRingGame.Entity.Abstract.csproj">
+      <Project>{F4B4F3DC-58B5-4F1B-A092-85BC43D231EE}</Project>
+      <Name>BrainRingGame.Entity.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrainRingGame.Entity.Impl\BrainRingGame.Entity.Impl.csproj">
+      <Project>{99204F5A-26A7-4187-87A9-CF7A61EBEAA0}</Project>
+      <Name>BrainRingGame.Entity.Impl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BrainRingGame.StaticClass\BrainRingGame.StaticClass.csproj">
       <Project>{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}</Project>
       <Name>BrainRingGame.StaticClass</Name>
@@ -110,6 +123,10 @@
     <ProjectReference Include="..\BrainRingGame.Style\BrainRingGame.Style.csproj">
       <Project>{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}</Project>
       <Name>BrainRingGame.Style</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrainRingGame.ViewModel\BrainRingGame.ViewModel.csproj">
+      <Project>{3E7A7274-37CC-4E09-A80D-635BB801EB0F}</Project>
+      <Name>BrainRingGame.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

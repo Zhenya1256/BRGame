@@ -1,4 +1,9 @@
-﻿using BrainRingGame.Style.Implemnt;
+﻿using BrainRingGame.BL.Impl.Handlers;
+using BrainRingGame.Entity.Abstract.EntityHolders;
+using BrainRingGame.Entity.Abstract.GameEntity;
+using BrainRingGame.Entity.Impl.GameEntity;
+using BrainRingGame.Style.Implemnt;
+using BrainRingGame.ViewModel.ViewModalForUserControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +34,7 @@ namespace BrainRingGame.UserControl
         public SettingOfPlay()
         {
             InitializeComponent();
+
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
@@ -138,9 +144,17 @@ namespace BrainRingGame.UserControl
         {
 
         }
-
         private void AddCommand(object sender, RoutedEventArgs e)
         {
+            TeamHandler teamHandl = new TeamHandler();
+           
+            string name = NameCommand.Text;
+            Team team = new Team();
+            team.Name = name;
+            team.TeamColor = System.Drawing.Color.Red;
+            List<ITeam> list = new List<ITeam>();
+            list.Add(team);
+            teamHandl.BuildTeams(list,0);
         }
     }
 }

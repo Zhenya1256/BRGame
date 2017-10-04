@@ -13,12 +13,12 @@ namespace BrainRingGame.BL.Impl.Recources
     public class ComponentSaver  : IComponentSaver
     {
         
-
         public IResult SaveComponents()
         {
             try
             {
-                using (FileStream fs = new FileStream(GameEntityHolder.AutoSavePath, FileMode.OpenOrCreate))
+                using (FileStream fs = new FileStream(GameEntityHolder.AutoSavePath, 
+                    FileMode.OpenOrCreate))
                 {
                     BinaryFormatter bf = new BinaryFormatter();
                     bf.Serialize(fs, new GameEntityInstanced());

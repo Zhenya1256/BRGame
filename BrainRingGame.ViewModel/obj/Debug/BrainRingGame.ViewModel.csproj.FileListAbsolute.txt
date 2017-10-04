@@ -11,3 +11,12 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\obj\Debug\BrainR
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\obj\Debug\BrainRingGame.ViewModel.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\obj\Debug\BrainRingGame.ViewModel.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\obj\Debug\BrainRingGame.ViewModel.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.HelpWindowForms.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.HelpWindowForms.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.HelpWindowForms.exe.config
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.BL.Impl.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.Entity.Impl.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.BL.Abstract.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.BL.Impl.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.Entity.Impl.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewModel\bin\Debug\BrainRingGame.BL.Abstract.pdb

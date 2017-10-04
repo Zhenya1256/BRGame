@@ -1,0 +1,17 @@
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\bin\Debug\BrainRingGame.HelpWindowForms.exe.config
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\bin\Debug\BrainRingGame.HelpWindowForms.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\bin\Debug\BrainRingGame.HelpWindowForms.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.csprojResolveAssemblyReference.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\DownloadArchiv.g.cs
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\App.g.cs
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms_MarkupCompile.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms_MarkupCompile.lref
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\DownloadArchiv.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.g.resources
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.Properties.Resources.resources
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.csproj.GenerateResource.Cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.csproj.CoreCompileInputs.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\RandomCommands.g.cs
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\RandomCommands.baml

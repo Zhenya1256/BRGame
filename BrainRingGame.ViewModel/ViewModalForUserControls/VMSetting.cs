@@ -1,9 +1,13 @@
-﻿using BrainRingGame.Entity.Abstract.Enums;
+﻿using BrainRingGame.BL.Impl.Handlers;
+using BrainRingGame.Entity.Abstract.EntityHolders;
+using BrainRingGame.Entity.Abstract.Enums;
 using BrainRingGame.HelpWindowForms;
 using BrainRingGame.ViewModel.Abstaract;
 using BrainRingGame.ViewModel.Base;
+using BrainRingGame.ViewModel.ViewModelForWindow;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,7 +17,7 @@ using System.Windows.Input;
 
 namespace BrainRingGame.ViewModel.ViewModalForUserControls
 {
-   public class VMSetting :ViewModelBase
+    public class VMSetting : ViewModelBase, INotifyPropertyChanged
     {
         private IMainWindowsCodeBehind _codeBehind;
         private RelayCommand _startPlayCommand;
@@ -24,6 +28,7 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
         {
             _codeBehind = codeBehind;
         }
+
 
         public ICommand BackStartPage
         {
@@ -50,7 +55,7 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         public async void ExecutePathCommand(object parameter)
         {
-          OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             if (openFileDialog1.ShowDialog() != DialogResult.OK)
             {
@@ -70,7 +75,7 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         private async Task ArchiveLoad(string path)
         {
-           // IDataResult<LoaderEntyity> dataResult = null;
+            // IDataResult<LoaderEntyity> dataResult = null;
             //Action<string> action = GetText;
             string message = "";
 
@@ -83,8 +88,8 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
                 }
                 catch (Exception)
                 {
-                   // message =
-                   //ErrorMessageHolder.GetErrorMessag(ErrorType.NonFormat);
+                    // message =
+                    //ErrorMessageHolder.GetErrorMessag(ErrorType.NonFormat);
                 }
 
                 if (files != null)
@@ -140,5 +145,63 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
             return filesStream;
         }
+
+
+
+
+
+
+        RelayCommand _addcommand;
+
+        public ICommand AddCommand
+        {
+            get
+            {
+                _addcommand = new RelayCommand
+                    ((p) => { }, CanAddCommands);
+
+                return _addcommand;
+            }
+
+        }
+
+        private bool CanAddCommands(object obj)
+        {
+            if (GameEntityHolder.Teams!=null && GameEntityHolder.Teams.Count == 16)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        RelayCommand _viewCommand;
+
+        public RelayCommand ViewCommand
+        {
+            get
+            {
+                _viewCommand = new RelayCommand
+                    (ExcuteViewCommand, CanViewCommand);
+
+                return _viewCommand;
+            }
+        }
+
+        private bool CanViewCommand(object obj)
+        {
+            return true;
+        }
+
+        private void ExcuteViewCommand(object o)
+        {
+            TeamHandler teams = new TeamHandler();
+            teams.AppendTeamsBuild(0);
+            RandomCommands commands = new RandomCommands();
+            commands.DataContext = new VMRandomComannds();
+
+        }
     }
-}
+
+
+
+    }

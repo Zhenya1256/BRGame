@@ -58,6 +58,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RandomCommands.xaml.cs">
+      <DependentUpon>RandomCommands.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DownloadArchiv.xaml.cs">
@@ -90,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="DownloadArchiv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RandomCommands.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,6 +13,8 @@ namespace BrainRingGame.BL.Impl.Handlers
 {
     public class TeamGroupHandler : ITeamGroupHandler
     {
+       private Random _random = new Random();
+
         public IResult GenerateTeamGroups(int stageNumber)
         {
             if (GameEntityHolder.Teams == null ||
@@ -24,10 +26,7 @@ namespace BrainRingGame.BL.Impl.Handlers
                     Success = false
                 };
             }
-
-            Random rand = new Random();
-            int currentCommand;
-            int minRange = 0, maxRange = GameEntityHolder.Teams.Count;
+         
             IResult methodResult = new Result()
             {
                 Success = false
@@ -36,66 +35,12 @@ namespace BrainRingGame.BL.Impl.Handlers
             switch (stageNumber)
             {
                 case 1:
-                    List<ITeam> teams = new List<ITeam>();
-                    teams.AddRange(GameEntityHolder.Teams);
-
-                    foreach (var subStage in GameEntityHolder.Game.CurrentChild.ChildItemss)
-                    {
-                        currentCommand = rand.Next(minRange, maxRange);
-                        ITeam team = teams.FirstOrDefault(p => p.Id == currentCommand);
-                        if (team != null)
-                        {
-                            GroupTeam teamToAdd = new GroupTeam()
-                            {
-                                Id = team.Id,
-                                TeamType = team.TeamType,
-                                IsExisting = team.IsExisting,
-                                Name = team.Name,
-                                TeamColor = team.TeamColor,
-                                Place = 0,
-                                Points = 0
-                            };
-
-                            subStage.TeamInformation.TeamsInGroup.Add(teamToAdd);
-                            teams.Remove(team);
-                        }
-                    }
-
-                    methodResult = new Result()
-                    {
-                        Success = true
-                    };
+                    StageNumberOne(ref methodResult);
 
                     break;
 
                 case 2:
-                    List<IGroupTeam> teamsSecondStage = new List<IGroupTeam>();
-
-                    var childItemss = GameEntityHolder.Game.ChildItemss
-                        .FirstOrDefault(p => p.StageNumber == 1)?.ChildItemss;
-
-                    if (childItemss != null)
-                    {
-                        foreach (ISubStage subStage in childItemss)
-                        {
-                            teamsSecondStage.AddRange(subStage.TeamInformation.TeamsInGroup);
-                        }
-                    }
-
-                    GameEntityHolder.Game.CurrentChild.CurrentChild.TeamInformation
-                        .TeamsInGroup = new List<IGroupTeam>();
-                    //TODO Remove 4 => to config section
-                    for (int i = 1; i <= 4; i++)
-                    {
-                        GameEntityHolder.Game.CurrentChild.CurrentChild.TeamInformation
-                            .TeamsInGroup.AddRange(teamsSecondStage.Where(p => p.Place == i));
-                    }
-
-                    methodResult = new Result()
-                    {
-                        Success = true
-                    };
-
+                    StageNumberTwo(ref methodResult);
                     break;
 
                     default:
@@ -103,6 +48,71 @@ namespace BrainRingGame.BL.Impl.Handlers
             }
 
             return methodResult;
+        }
+
+        private void StageNumberOne(ref IResult methodResult)
+        {
+            List<ITeam> teams = new List<ITeam>();
+            teams.AddRange(GameEntityHolder.Teams);
+            int currentCommand;
+            int minRange = 0, maxRange = GameEntityHolder.Teams.Count;
+
+            foreach (SubStage subStage in GameEntityHolder.Game.CurrentChild.ChildItemss)
+            {
+                currentCommand = _random.Next(minRange, maxRange);
+                ITeam team = teams.FirstOrDefault(p => p.Id == currentCommand);
+                if (team != null)
+                {
+                    GroupTeam teamToAdd = new GroupTeam()
+                    {
+                        Id = team.Id,
+                        TeamType = team.TeamType,
+                        IsExisting = team.IsExisting,
+                        Name = team.Name,
+                        TeamColor = team.TeamColor,
+                        Place = 0,
+                        Points = 0
+                    };
+                    GameEntityHolder.Game.CurrentChild.StageNumber = 1;
+                    subStage.TeamInformation.TeamsInGroup.Add(teamToAdd);
+                    teams.Remove(team);
+                }
+            }
+
+            methodResult = new Result()
+            {
+                Success = true
+            };
+        }
+
+        private void StageNumberTwo(ref IResult methodResult)
+        {
+            List<IGroupTeam> teamsSecondStage = new List<IGroupTeam>();
+
+            var childItemss = GameEntityHolder.Game.ChildItemss
+                .FirstOrDefault(p => p.StageNumber == 1)?.ChildItemss;
+
+            if (childItemss != null)
+            {
+                foreach (ISubStage subStage in childItemss)
+                {
+                    teamsSecondStage.AddRange(subStage.TeamInformation.TeamsInGroup);
+                }
+            }
+
+            GameEntityHolder.Game.CurrentChild.CurrentChild.TeamInformation
+                .TeamsInGroup = new List<IGroupTeam>();
+            //TODO Remove 4 => to config section
+            for (int i = 1; i <= 4; i++)
+            {
+                GameEntityHolder.Game.CurrentChild.CurrentChild.TeamInformation
+                    .TeamsInGroup.AddRange(teamsSecondStage.Where(p => p.Place == i));
+            }
+
+            methodResult = new Result()
+            {
+                Success = true
+            };
         }
     }
 }
