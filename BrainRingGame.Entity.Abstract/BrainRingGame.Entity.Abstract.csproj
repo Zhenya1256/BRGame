@@ -51,6 +51,7 @@
     <Compile Include="EntityHolders\GameEntityHolder.cs" />
     <Compile Include="Enums\DrawFileComponentType.cs" />
     <Compile Include="Enums\ChangeStateType.cs" />
+    <Compile Include="Enums\ViewType.cs" />
     <Compile Include="GameEntity\Base\IBaseStageEntityWithChild.cs" />
     <Compile Include="GameEntity\Base\INumericEntity.cs" />
     <Compile Include="GameEntity\Base\IBaseEntityWithChild.cs" />

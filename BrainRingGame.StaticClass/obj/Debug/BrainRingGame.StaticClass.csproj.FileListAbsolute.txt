@@ -1,0 +1,9 @@
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\bin\Debug\BrainRingGame.StaticClass.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\bin\Debug\BrainRingGame.StaticClass.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\bin\Debug\BrainRingGame.Style.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\bin\Debug\BrainRingGame.Style.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\bin\Debug\BrainRingGame.Style.exe.config
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\obj\Debug\BrainRingGame.StaticClass.csprojResolveAssemblyReference.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\obj\Debug\BrainRingGame.StaticClass.csproj.CoreCompileInputs.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\obj\Debug\BrainRingGame.StaticClass.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.StaticClass\obj\Debug\BrainRingGame.StaticClass.pdb

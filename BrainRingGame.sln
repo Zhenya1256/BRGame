@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.Entity.Abstract", "BrainRingGame.Entity.Abstract\BrainRingGame.Entity.Abstract.csproj", "{F4B4F3DC-58B5-4F1B-A092-85BC43D231EE}"
 EndProject
@@ -10,6 +10,20 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.Entity.Impl", "BrainRingGame.Entity.Impl\BrainRingGame.Entity.Impl.csproj", "{99204F5A-26A7-4187-87A9-CF7A61EBEAA0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.BL.Impl", "BrainRingGame.BL.Impl\BrainRingGame.BL.Impl.csproj", "{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.MessegeHolder", "BrainRingGame.MessegeHolder\BrainRingGame.MessegeHolder.csproj", "{A5609E1E-FD27-4E0C-9FD6-6B4944B74AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.ViewModel", "BrainRingGame.ViewModel\BrainRingGame.ViewModel.csproj", "{3E7A7274-37CC-4E09-A80D-635BB801EB0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.ViewWindow", "BrainRingGame.ViewWindow\BrainRingGame.ViewWindow.csproj", "{FE50ED80-E79D-43E7-A612-293653329172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.StaticClass", "BrainRingGame.StaticClass\BrainRingGame.StaticClass.csproj", "{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.Style", "BrainRingGame.Style\BrainRingGame.Style.csproj", "{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.UserControls", "BrainRingGame.UserControl\BrainRingGame.UserControls.csproj", "{6172EFDF-A42D-4CDA-87A0-3096A85DD8E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainRingGame.HelpWindowForms", "BrainRingGame.HelpWindowForms\BrainRingGame.HelpWindowForms.csproj", "{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +47,39 @@ Global
 		{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3660FFCE-49D4-4AC9-8D28-CEB501E038C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5609E1E-FD27-4E0C-9FD6-6B4944B74AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5609E1E-FD27-4E0C-9FD6-6B4944B74AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5609E1E-FD27-4E0C-9FD6-6B4944B74AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5609E1E-FD27-4E0C-9FD6-6B4944B74AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7A7274-37CC-4E09-A80D-635BB801EB0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7A7274-37CC-4E09-A80D-635BB801EB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7A7274-37CC-4E09-A80D-635BB801EB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7A7274-37CC-4E09-A80D-635BB801EB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE50ED80-E79D-43E7-A612-293653329172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE50ED80-E79D-43E7-A612-293653329172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE50ED80-E79D-43E7-A612-293653329172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE50ED80-E79D-43E7-A612-293653329172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC675AB4-E2DF-49E4-BF2F-A91C2A759FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E451C6F5-3FA9-4D2D-BB13-7781EADB96F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6172EFDF-A42D-4CDA-87A0-3096A85DD8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6172EFDF-A42D-4CDA-87A0-3096A85DD8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6172EFDF-A42D-4CDA-87A0-3096A85DD8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6172EFDF-A42D-4CDA-87A0-3096A85DD8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD9B59D-D735-4FDA-B3F4-DD349E77049A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED19EE5C-6E99-4BD4-88D8-B8E863B022B3}
 	EndGlobalSection
 EndGlobal

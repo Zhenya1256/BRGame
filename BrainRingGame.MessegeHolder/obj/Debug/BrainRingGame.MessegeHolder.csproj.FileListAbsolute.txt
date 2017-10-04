@@ -1,0 +1,5 @@
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.MessegeHolder\bin\Debug\BrainRingGame.MessegeHolder.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.MessegeHolder\bin\Debug\BrainRingGame.MessegeHolder.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.MessegeHolder\obj\Debug\BrainRingGame.MessegeHolder.csproj.CoreCompileInputs.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.MessegeHolder\obj\Debug\BrainRingGame.MessegeHolder.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.MessegeHolder\obj\Debug\BrainRingGame.MessegeHolder.pdb
