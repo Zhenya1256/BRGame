@@ -46,6 +46,7 @@
     <Compile Include="ChamgeBackground\ChangeThems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIHelper\ComponentResolve.cs" />
+    <Compile Include="UIHelper\TabsNomer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BrainRingGame.Style\BrainRingGame.Style.csproj">

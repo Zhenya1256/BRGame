@@ -15,3 +15,5 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\BrainRingGame.HelpWindowForms.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\RandomCommands.g.cs
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\RandomCommands.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\SomeSetting.g.cs
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.HelpWindowForms\obj\Debug\SomeSetting.baml

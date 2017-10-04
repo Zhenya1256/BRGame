@@ -21,12 +21,12 @@ namespace BrainRingGame.ViewModel.ViewModelForWindow
         public VMRandomComannds()
         {
             TeamGroupHandler handler = new TeamGroupHandler();
-            IResult result = handler.GenerateTeamGroups(1);
+            IDataResult<List<ISubStage>> result = handler.GenerateTeamGroups(1);
             groups = new List<List<string>>();
 
             if (result.Success)
             {
-                List<ISubStage> substages = GameEntityHolder.Game.CurrentChild.ChildItemss;
+                List<ISubStage> substages = result.Data;
 
                 foreach (ISubStage teams in substages)
                 {

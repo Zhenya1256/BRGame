@@ -53,6 +53,7 @@
     <Compile Include="ViewModalForUserControls\VMStartPage.cs" />
     <Compile Include="ViewModelForWindow\VMMainWindow.cs" />
     <Compile Include="ViewModelForWindow\VMRandomComannds.cs" />
+    <Compile Include="ViewModelForWindow\VMSomeSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BrainRingGame.BL.Impl\BrainRingGame.BL.Impl.csproj">

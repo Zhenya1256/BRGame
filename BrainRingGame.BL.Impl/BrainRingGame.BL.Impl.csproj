@@ -30,9 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,15 +47,14 @@
     <Compile Include="GameProcessors\StateChangeProcessor.cs" />
     <Compile Include="Handlers\TeamGroupHandler.cs" />
     <Compile Include="Handlers\TeamHandler.cs" />
+    <Compile Include="ImageProcessor\AddImageControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recources\ComponentLoader.cs" />
     <Compile Include="Recources\ComponentReader.cs" />
     <Compile Include="Recources\ComponentSaver.cs" />
     <Compile Include="Recources\ComponentValidator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ImageProcessor\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BrainRingGame.BL.Abstract\BrainRingGame.BL.Abstract.csproj">
       <Project>{017E70B7-6C12-40D4-BB87-298A4646BD5D}</Project>

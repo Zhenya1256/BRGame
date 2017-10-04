@@ -15,21 +15,21 @@ namespace BrainRingGame.BL.Impl.Handlers
     {
        private Random _random = new Random();
 
-        public IResult GenerateTeamGroups(int stageNumber)
+        public IDataResult<List<ISubStage>> GenerateTeamGroups(int stageNumber)
         {
             if (GameEntityHolder.Teams == null ||
                 !GameEntityHolder.Teams.Any())
             {
-                return new Result()
+                return new DataResult<List<ISubStage>>()
                 {
                     //TODO Set Error message from errorholder
                     Success = false
                 };
             }
-         
-            IResult methodResult = new Result()
+
+            DataResult<List<ISubStage>> methodResult = new DataResult<List<ISubStage>>()
             {
-                Success = false
+                Success = true
             };
 
             switch (stageNumber)
@@ -50,16 +50,27 @@ namespace BrainRingGame.BL.Impl.Handlers
             return methodResult;
         }
 
-        private void StageNumberOne(ref IResult methodResult)
+        private void StageNumberOne(ref DataResult<List<ISubStage>> methodResult)
         {
             List<ITeam> teams = new List<ITeam>();
             teams.AddRange(GameEntityHolder.Teams);
             int currentCommand;
             int minRange = 0, maxRange = GameEntityHolder.Teams.Count;
+            GameEntityHolder.Game = new Game();
+            GameEntityHolder.Game.CurrentChild = new Stage();
+            GameEntityHolder.Game.CurrentChild.ChildItemss = new List<ISubStage>();
+         
 
+            for (int i = 0; i < 4; i++)
+            {
+                GameEntityHolder.Game.CurrentChild.ChildItemss.Add(new SubStage());
+            }
+            List<ISubStage> stages=null;
+            stages = new List<ISubStage>();
             foreach (SubStage subStage in GameEntityHolder.Game.CurrentChild.ChildItemss)
             {
                 currentCommand = _random.Next(minRange, maxRange);
+           
                 ITeam team = teams.FirstOrDefault(p => p.Id == currentCommand);
                 if (team != null)
                 {
@@ -74,18 +85,22 @@ namespace BrainRingGame.BL.Impl.Handlers
                         Points = 0
                     };
                     GameEntityHolder.Game.CurrentChild.StageNumber = 1;
+                    subStage.TeamInformation = new TeamGroup();
+                    subStage.TeamInformation.TeamsInGroup = new List<IGroupTeam>();
                     subStage.TeamInformation.TeamsInGroup.Add(teamToAdd);
+                    stages.Add(subStage);
                     teams.Remove(team);
                 }
             }
 
-            methodResult = new Result()
+            methodResult = new DataResult<List<ISubStage>>()
             {
-                Success = true
+                Success = true,
+                Data = stages
             };
         }
 
-        private void StageNumberTwo(ref IResult methodResult)
+        private void StageNumberTwo(ref DataResult<List<ISubStage>> methodResult)
         {
             List<IGroupTeam> teamsSecondStage = new List<IGroupTeam>();
 
@@ -109,7 +124,7 @@ namespace BrainRingGame.BL.Impl.Handlers
                     .TeamsInGroup.AddRange(teamsSecondStage.Where(p => p.Place == i));
             }
 
-            methodResult = new Result()
+            methodResult = new DataResult<List<ISubStage>>()
             {
                 Success = true
             };

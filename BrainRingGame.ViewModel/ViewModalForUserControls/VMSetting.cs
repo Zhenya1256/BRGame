@@ -22,6 +22,7 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
         private IMainWindowsCodeBehind _codeBehind;
         private RelayCommand _startPlayCommand;
         public static bool IsSettingPlay;
+        public static bool IsSettingCommand;
         private DownloadArchiv _downLoad;
 
         public VMSetting(IMainWindowsCodeBehind codeBehind)
@@ -167,7 +168,7 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         private bool CanAddCommands(object obj)
         {
-            if (GameEntityHolder.Teams!=null && GameEntityHolder.Teams.Count == 16)
+            if (GameEntityHolder.Teams != null && GameEntityHolder.Teams.Count == 16)
             {
                 return false;
             }
@@ -201,7 +202,4 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         }
     }
-
-
-
-    }
+}

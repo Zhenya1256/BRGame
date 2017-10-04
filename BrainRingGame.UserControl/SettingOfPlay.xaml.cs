@@ -2,6 +2,7 @@
 using BrainRingGame.Entity.Abstract.EntityHolders;
 using BrainRingGame.Entity.Abstract.GameEntity;
 using BrainRingGame.Entity.Impl.GameEntity;
+using BrainRingGame.StaticClass.UIHelper;
 using BrainRingGame.Style.Implemnt;
 using BrainRingGame.ViewModel.ViewModalForUserControls;
 using System;
@@ -34,6 +35,7 @@ namespace BrainRingGame.UserControl
         public SettingOfPlay()
         {
             InitializeComponent();
+            Setting.SelectedIndex = TabsNomer.Index;
 
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)

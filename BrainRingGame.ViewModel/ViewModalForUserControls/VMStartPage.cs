@@ -1,6 +1,9 @@
 ﻿using BrainRingGame.Entity.Abstract.Enums;
+using BrainRingGame.HelpWindowForms;
+using BrainRingGame.StaticClass.UIHelper;
 using BrainRingGame.ViewModel.Abstaract;
 using BrainRingGame.ViewModel.Base;
+using BrainRingGame.ViewModel.ViewModelForWindow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,28 +36,27 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         public void ExecuteStartPlyCommand(object parameter)
         {
-            //if (!SettingViewModel.IsSettingPlay)
-            //{
-            //    SomeSetting some = new SomeSetting();
-            //    SomeSettingViewModal vm = new SomeSettingViewModal(_codeBehind);
+            if (!VMSetting.IsSettingPlay)
+            {
+                SomeSetting some = new SomeSetting();
+                VMSomeSetting vm = new VMSomeSetting(_codeBehind);
 
-            //    if (SettingViewModel.IsSettingCommand)
-            //    {
-            //        some.CommandImage();
-
-            //    }
-            //    some.DataContext = vm;
-            //    some.Show();
-            //}
-            //else if (!SettingViewModel.IsSettingCommand)
-            //{
-            //    SomeSetting some = new SomeSetting();
-            //    some.SettingImage();
-            //    SomeSettingViewModal vm = new SomeSettingViewModal(_codeBehind);
-            //    some.DataContext = vm;
-            //    some.Show();
-            //}
-            //else
+                if (VMSetting.IsSettingCommand)
+                {
+                    some.CommandImage();
+                }
+                some.DataContext = vm;
+                some.Show();
+            }
+            else if (!VMSetting.IsSettingCommand)
+            {
+                SomeSetting some = new SomeSetting();
+                some.SettingImage();
+                VMSomeSetting vm = new VMSomeSetting(_codeBehind);
+                some.DataContext = vm;
+                some.Show();
+            }
+            else
             {
                 _codeBehind.LoadView(ViewType.ChooseStage);
             }
@@ -113,21 +115,25 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         private void ExecuteSettingStyleCommand(object parameter)
         {
+            TabsNomer.Index = 2;
             _codeBehind.LoadView(ViewType.Setting);
         }
 
         private void ExecuteSettingCreatCommand(object parameter)
         {
+            TabsNomer.Index = 3;
             _codeBehind.LoadView(ViewType.Setting);
         }
 
         private void ExecuteSettingCommand(object parameter)
         {
+            TabsNomer.Index = 1;
             _codeBehind.LoadView(ViewType.Setting);
         }
 
         private void ExecuteSettingButCommand(object parameter)
         {
+            TabsNomer.Index = 0;
             _codeBehind.LoadView(ViewType.Setting);
 
         }
