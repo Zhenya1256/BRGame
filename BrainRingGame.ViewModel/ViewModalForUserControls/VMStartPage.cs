@@ -1,9 +1,8 @@
 ﻿using BrainRingGame.Entity.Abstract.Enums;
-using BrainRingGame.HelpWindowForms;
-using BrainRingGame.StaticClass.UIHelper;
-using BrainRingGame.ViewModel.Abstaract;
-using BrainRingGame.ViewModel.Base;
-using BrainRingGame.ViewModel.ViewModelForWindow;
+using BrainRingGame.Style.UIHelper;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Abstaract;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModelForWindow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace BrainRingGame.ViewModel.ViewModalForUserControls
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModalForUserControls
 {
    public class VMStartPage : ViewModelBase
     {
@@ -36,31 +35,31 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
         public void ExecuteStartPlyCommand(object parameter)
         {
-            if (!VMSetting.IsSettingPlay)
-            {
-                SomeSetting some = new SomeSetting();
-                VMSomeSetting vm = new VMSomeSetting(_codeBehind);
+            //if (!VMSetting.IsSettingPlay)
+            //{
+            //    SomeSetting some = new SomeSetting();
+            //    VMSomeSetting vm = new VMSomeSetting(_codeBehind);
 
-                if (VMSetting.IsSettingCommand)
-                {
-                    some.CommandImage();
-                }
-                some.DataContext = vm;
-                some.Show();
-            }
-            else if (!VMSetting.IsSettingCommand)
-            {
-                SomeSetting some = new SomeSetting();
-                some.SettingImage();
-                VMSomeSetting vm = new VMSomeSetting(_codeBehind);
-                some.DataContext = vm;
-                some.Show();
-            }
-            else
-            {
-                _codeBehind.LoadView(ViewType.ChooseStage);
-            }
-
+            //    if (VMSetting.IsSettingCommand)
+            //    {
+            //        some.CommandImage();
+            //    }
+            //    some.DataContext = vm;
+            //    some.Show();
+            //}
+            //else if (!VMSetting.IsSettingCommand)
+            //{
+            //    SomeSetting some = new SomeSetting();
+            //    some.SettingImage();
+            //    VMSomeSetting vm = new VMSomeSetting(_codeBehind);
+            //    some.DataContext = vm;
+            //    some.Show();
+            //}
+            //else
+            //{
+            //    _codeBehind.LoadView(ViewType.ChooseStage);
+            //}
+            _codeBehind.LoadView(ViewType.ChooseStage);
         }
 
         #region Setting_ICommand

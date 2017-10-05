@@ -1,7 +1,7 @@
 ﻿using BrainRingGame.Entity.Abstract.Enums;
-using BrainRingGame.StaticClass.UIHelper;
-using BrainRingGame.ViewModel.Abstaract;
-using BrainRingGame.ViewModel.Base;
+using BrainRingGame.Style.UIHelper;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Abstaract;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace BrainRingGame.ViewModel.ViewModelForWindow
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModelForWindow
 {
    public class VMSomeSetting : ViewModelBase
     {

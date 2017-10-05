@@ -6,6 +6,6 @@ namespace BrainRingGame.BL.Abstract.Handlers
 {
     public interface ITeamGroupHandler
     {
-        IDataResult<List<ISubStage>> GenerateTeamGroups(int stageNumber);
+        IResult GenerateTeamGroups(int stageNumber);
     }
 }

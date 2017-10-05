@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrainRingGame.ViewModel.Base
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base
 {
     public class ViewModelBase : INotifyPropertyChanged, IDisposable
     {

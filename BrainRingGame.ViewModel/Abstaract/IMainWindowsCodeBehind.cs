@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrainRingGame.ViewModel.Abstaract
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Abstaract
 {
    public interface IMainWindowsCodeBehind
     {

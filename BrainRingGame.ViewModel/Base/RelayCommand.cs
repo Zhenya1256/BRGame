@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace BrainRingGame.ViewModel.Base
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base
 {
    public class RelayCommand : ICommand
     {

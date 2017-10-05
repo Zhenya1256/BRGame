@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace BrainRingGame.UserControl
+namespace BrainRingGame.Ui.Wpf.Common.UserControl
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\WarningType.cs" />
-    <Compile Include="Message\WarningMessage.cs" />
+    <Compile Include="Enum\MessageType.cs" />
+    <Compile Include="Message\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

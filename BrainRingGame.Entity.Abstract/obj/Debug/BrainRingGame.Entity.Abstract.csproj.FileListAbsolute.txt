@@ -5,7 +5,6 @@ c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRin
 c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\BrainRingGame.Entity.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\BrainRingGame.Entity.Abstract.pdb
-D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.csprojResolveAssemblyReference.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.pdb

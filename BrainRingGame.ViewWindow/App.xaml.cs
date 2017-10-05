@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace BrainRingGame.ViewWindow
+namespace BrainRingGame.UI.Main
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

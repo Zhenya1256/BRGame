@@ -1,4 +1,5 @@
-﻿using BrainRingGame.StaticClass.ChamgeBackground;
+﻿
+using BrainRingGame.Style.Implemnt;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +16,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BrainRingGame.UserControls
-{
+namespace BrainRingGame.Ui.Wpf.Common.UserControl
+{ 
     /// <summary>
     /// Логика взаимодействия для StartPage.xaml
     /// </summary>
-    public partial class StartPage :System.Windows.Controls.UserControl
+public partial class StartPage :System.Windows.Controls.UserControl
     {
         private bool _isClose;
 

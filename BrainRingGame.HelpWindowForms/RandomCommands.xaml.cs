@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace BrainRingGame.HelpWindowForms
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.Help
 {
     /// <summary>
     /// Логика взаимодействия для RandomCommands.xaml

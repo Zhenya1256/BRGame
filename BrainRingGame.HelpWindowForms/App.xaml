@@ -1,7 +1,7 @@
-﻿<Application x:Class="BrainRingGame.HelpWindowForms.App"
+﻿<Application x:Class="BrainRingGame.Ui.Wpf.Common.Recourses.Help.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:BrainRingGame.HelpWindowForms"
+             xmlns:local="clr-namespace:BrainRingGame.Ui.Wpf.Common.Recourses.Help"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

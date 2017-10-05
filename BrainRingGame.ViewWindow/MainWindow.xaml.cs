@@ -1,13 +1,12 @@
 ﻿using BrainRingGame.Entity.Abstract.Enums;
 using BrainRingGame.MessegeHolder.Enum;
 using BrainRingGame.MessegeHolder.Message;
-using BrainRingGame.StaticClass.UIHelper;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Abstaract;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModalForUserControls;
+using BrainRingGame.Ui.Wpf.Common.UserControl;
 using BrainRingGame.UserControl;
-using BrainRingGame.UserControls;
-using BrainRingGame.ViewModel.Abstaract;
-using BrainRingGame.ViewModel.Base;
 using BrainRingGame.ViewModel.ViewModalForUserControls;
-using BrainRingGame.ViewModel.ViewModelForWindow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +23,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BrainRingGame.ViewWindow
+namespace BrainRingGame.UI.Main
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -36,10 +35,8 @@ namespace BrainRingGame.ViewWindow
             InitializeComponent();
             this.Closing += MainWindow_Closing;
             this.KeyDown += MainWindow_KeyDown;
-            this.Loaded += MainWindow_Loaded;
-          
+            this.Loaded += MainWindow_Loaded;      
         }
-
 
         #region EventWindow
 
@@ -50,27 +47,48 @@ namespace BrainRingGame.ViewWindow
 
         private void MainWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            //var components = ComponentResolve.ResolveComponents<ViewPlay>(this);
+            var components = ResolveComponents<TopicQuestion>(this);
 
-            //if (components != null && components.Any())
-            //{
-            //    var component = components.FirstOrDefault();
-            //    component.HandleKeyPress(e.Key);
-            //}
+            if (components != null && components.Any())
+            {
+                var component = components.FirstOrDefault();
+                component.HandleKeyPress(e.Key);
+            }
 
-            //var componentSetting = ComponentResolve.ResolveComponents<ViewSetting>(this);
+            var componentSetting = ResolveComponents<SettingOfPlay>(this);
 
-            //if (componentSetting != null && componentSetting.Any())
-            //{
-            //    var component = componentSetting.FirstOrDefault();
-            //    component.HandleKeyPress(e.Key);
-            //}
+            if (componentSetting != null && componentSetting.Any())
+            {
+                var component = componentSetting.FirstOrDefault();
+                component.HandleKeyPress(e.Key);
+            }
+        }
+
+        public static IEnumerable<T> ResolveComponents<T>(DependencyObject depObj)
+          where T : DependencyObject
+        {
+            if (depObj != null)
+            {
+                for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
+                    if (child != null && child is T)
+                    {
+                        yield return (T)child;
+                    }
+
+                    foreach (T childOfChild in ResolveComponents<T>(child))
+                    {
+                        yield return childOfChild;
+                    }
+                }
+            }
         }
 
         private void MainWindow_Closing(object sender,
             System.ComponentModel.CancelEventArgs e)
         {
-            string warning = WarningMessage.GetWarningMessag(WarningType.Exit);
+            string warning = MessegeHolder.Message.Message.GetWarningMessag(MessageType.Exit);
             DialogResult result = System.Windows.Forms.
                     MessageBox.Show(warning, "", MessageBoxButtons.YesNo);
 
@@ -95,36 +113,29 @@ namespace BrainRingGame.ViewWindow
                     VMStartPage vm = new VMStartPage(this);
                     LoadUserControl(view, vm);
                     break;
-
-
                 case ViewType.Setting:
                     SettingOfPlay page = new SettingOfPlay();
                     VMSetting modal = new VMSetting(this);
                     LoadUserControl(page, modal);
                     break;
-            }
-            //    case ViewType.ChooseStage:
-            //        ViewChooseStag choose = new ViewChooseStag();
-            //        ChooseStageViewModal modalch = new ChooseStageViewModal(this);
-            //        choose.DataContext = modalch;
-            //        this.Content = choose;
-            //        break;
-            //    case ViewType.PLay:
-            //        //new ViewSetting();
-            //        ViewPlay play = new ViewPlay();
-            //        //   this.KeyDown += play.HandleKeyPress;
-            //        PlayViewModel modalpl = new PlayViewModel(this);
-            //        play.DataContext = modalpl;
-            //        this.Content = play;
-            //        break;
-            //    case ViewType.Thems:
 
-            //        ViewThems thems = new ViewThems();
-            //        ThemsViewModal modalth = new ThemsViewModal(this);
-            //        thems.DataContext = modalth;
-            //        this.Content = thems;
-            //        break;
-            //}
+                case ViewType.ChooseStage:
+                    SubStages choose = new SubStages();
+                    VMSubStages modalch = new VMSubStages(this);
+                    LoadUserControl(choose, modalch);
+                    break;
+
+                case ViewType.PLay:
+                    TopicQuestion play = new TopicQuestion();
+                    VMTopicQuestion modalpl = new VMTopicQuestion(this);
+                    LoadUserControl(play, modalpl);
+                    break;
+                case ViewType.Thems:
+                    ThemsQuation thems = new ThemsQuation();
+                    VMQuestionThems modalth = new VMQuestionThems(this);
+                    LoadUserControl(thems, modalth);
+                    break;
+            }
         }
 
         private void LoadUserControl (System.Windows.Controls.UserControl control, 
@@ -133,7 +144,6 @@ namespace BrainRingGame.ViewWindow
             control.DataContext = vm;
             this.Content = control;
         }
-
 
     }
 }

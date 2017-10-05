@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrainRingGame.Style.Implemnt
+namespace BrainRingGame.Ui.Wpf.Recourses.Style.Implemnt
 {
    public class SaveStyle
     {

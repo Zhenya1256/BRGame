@@ -1,10 +1,10 @@
 ﻿using BrainRingGame.BL.Impl.Handlers;
 using BrainRingGame.Entity.Abstract.EntityHolders;
 using BrainRingGame.Entity.Abstract.Enums;
-using BrainRingGame.HelpWindowForms;
-using BrainRingGame.ViewModel.Abstaract;
-using BrainRingGame.ViewModel.Base;
-using BrainRingGame.ViewModel.ViewModelForWindow;
+using BrainRingGame.Ui.Wpf.Common.Recourses.Help;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Abstaract;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.Base;
+using BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModelForWindow;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,21 +15,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
 
-namespace BrainRingGame.ViewModel.ViewModalForUserControls
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModalForUserControls
 {
     public class VMSetting : ViewModelBase, INotifyPropertyChanged
     {
         private IMainWindowsCodeBehind _codeBehind;
         private RelayCommand _startPlayCommand;
+        private DownloadArchiv _downLoad;
+        private RelayCommand _addcommand;
+
         public static bool IsSettingPlay;
         public static bool IsSettingCommand;
-        private DownloadArchiv _downLoad;
 
         public VMSetting(IMainWindowsCodeBehind codeBehind)
         {
             _codeBehind = codeBehind;
         }
-
 
         public ICommand BackStartPage
         {
@@ -146,13 +147,6 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
 
             return filesStream;
         }
-
-
-
-
-
-
-        RelayCommand _addcommand;
 
         public ICommand AddCommand
         {

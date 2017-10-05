@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BrainRingGame.MessegeHolder.Message;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace BrainRingGame.HelpWindowForms
+namespace BrainRingGame.Ui.Wpf.Common.Recourses.Help
 {
     /// <summary>
     /// Логика взаимодействия для DownloadArchiv.xaml
@@ -22,6 +23,9 @@ namespace BrainRingGame.HelpWindowForms
         public DownloadArchiv()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            textBlock.Text = Message.GetWarningMessag
+                (MessegeHolder.Enum.MessageType.LoadArchiv);
         }
     }
 }

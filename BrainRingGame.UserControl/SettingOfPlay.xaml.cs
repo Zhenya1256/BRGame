@@ -2,9 +2,9 @@
 using BrainRingGame.Entity.Abstract.EntityHolders;
 using BrainRingGame.Entity.Abstract.GameEntity;
 using BrainRingGame.Entity.Impl.GameEntity;
-using BrainRingGame.StaticClass.UIHelper;
-using BrainRingGame.Style.Implemnt;
-using BrainRingGame.ViewModel.ViewModalForUserControls;
+using BrainRingGame.Style.UIHelper;
+using BrainRingGame.Ui.Wpf.Recourses.Style.Implemnt;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BrainRingGame.UserControl
+namespace BrainRingGame.Ui.Wpf.Common.UserControl
 {
     /// <summary>
     /// Логика взаимодействия для SettingOfPlay.xaml
@@ -41,6 +41,11 @@ namespace BrainRingGame.UserControl
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Forms.Help.ShowHelp(null, "Справка/СправкаГри.chm");
+        }
+
+        public void HandleKeyPress(Key key)
+        {
+
         }
 
         #region Tabs

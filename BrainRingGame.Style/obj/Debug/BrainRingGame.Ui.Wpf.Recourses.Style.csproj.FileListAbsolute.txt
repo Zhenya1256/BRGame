@@ -1,0 +1,16 @@
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\bin\Debug\BrainRingGame.Style.exe.config
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\bin\Debug\BrainRingGame.Style.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\bin\Debug\BrainRingGame.Style.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\App.g.cs
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Style_MarkupCompile.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Style_MarkupCompile.lref
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Image1Style.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Image2Style.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Image3Style.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Image4Style.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Світлий.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\Темний.baml
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Style.g.resources
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Ui.Wpf.Recourses.Style.csproj.CoreCompileInputs.cache
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Style.exe
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Style\obj\Debug\BrainRingGame.Style.pdb
