@@ -63,9 +63,9 @@ namespace BrainRingGame.Ui.Wpf.Recourses.Components.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AddQuation {
+        public static System.Drawing.Bitmap AddQuestion {
             get {
-                object obj = ResourceManager.GetObject("AddQuation", resourceCulture);
+                object obj = ResourceManager.GetObject("AddQuestion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

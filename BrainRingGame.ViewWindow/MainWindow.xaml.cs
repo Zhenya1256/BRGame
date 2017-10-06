@@ -42,7 +42,7 @@ namespace BrainRingGame.UI.Main
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadView(ViewType.PLay);
+            LoadView(ViewType.ChooseStage);
         }
 
         private void MainWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
@@ -122,6 +122,7 @@ namespace BrainRingGame.UI.Main
                 case ViewType.ChooseStage:
                     SubStages choose = new SubStages();
                     VMSubStages modalch = new VMSubStages(this);
+                    choose.ActionEvent += modalch.HandleImage;
                     LoadUserControl(choose, modalch);
                     break;
 
@@ -134,6 +135,7 @@ namespace BrainRingGame.UI.Main
                 case ViewType.Thems:
                     ThemsQuation thems = new ThemsQuation();
                     VMQuestionThems modalth = new VMQuestionThems(this);
+                    thems.EventImage += modalth.HandleImage;
                     LoadUserControl(thems, modalth);
                     break;
             }

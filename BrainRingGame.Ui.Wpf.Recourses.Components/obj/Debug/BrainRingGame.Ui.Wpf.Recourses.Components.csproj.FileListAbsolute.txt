@@ -5,3 +5,4 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Ui.Wpf.Recourses.Component
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Ui.Wpf.Recourses.Components\obj\Debug\BrainRingGame.Ui.Wpf.Recourses.Components.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Ui.Wpf.Recourses.Components\obj\Debug\BrainRingGame.Ui.Wpf.Recourses.Components.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Ui.Wpf.Recourses.Components\obj\Debug\BrainRingGame.Ui.Wpf.Recourses.Components.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Ui.Wpf.Recourses.Components\obj\Debug\BrainRingGame.Ui.Wpf.Recourses.Components.csprojResolveAssemblyReference.cache

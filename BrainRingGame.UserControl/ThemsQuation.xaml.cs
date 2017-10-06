@@ -21,6 +21,8 @@ namespace BrainRingGame.UserControl
     /// </summary>
     public partial class ThemsQuation : System.Windows.Controls.UserControl
     {
+        public Action<int> EventImage;
+
         private bool _isClose;
 
         public ThemsQuation()
@@ -32,27 +34,58 @@ namespace BrainRingGame.UserControl
 
         private void StackDown(object sender, MouseEventArgs e)
         {
+            if (EventImage != null)
+            {
+                EventImage.Invoke(1);
+            }
 
         }
 
         private void StackDown1(object sender, MouseEventArgs e)
         {
-            //Image panel1 = (Image)sender;
-            //Result.ImageResult = panel1.Name;
+            Image panel = (Image)sender;
+
+            if (EventImage != null)
+            {
+                int nomer = GetNomerElement(panel.Name);
+                EventImage.Invoke(nomer);
+            }
         }
 
 
         private void StackDown2(object sender, MouseEventArgs e)
         {
-            //TextBlock panel1 = (TextBlock)sender;
-            //string name = panel1.Name;
-            //name = name.Replace("Text", "Image");
-            //Result.ImageResult = name;
+            TextBlock panel1 = (TextBlock)sender;
+            string name = panel1.Name;
+            name = name.Replace("Text", "Image");
+
+            if (EventImage != null)
+            {
+                int nomer = GetNomerElement(name);
+                EventImage.Invoke(nomer);
+            }
         }
+
+        private int GetNomerElement(string name)
+        {
+            int nomer = 0;
+
+            foreach (var s in name)
+            {
+                if (Char.IsDigit(s))
+                {
+                    nomer = int.Parse(s.ToString());
+                    break;
+                }
+            }
+
+            return nomer;
+        }
+
 
         #endregion
 
-        #region MenuDown
+         #region MenuDown
 
         private void Label_MouseDown(object sender, RoutedEventArgs e)
         {
@@ -88,5 +121,7 @@ namespace BrainRingGame.UserControl
         }
 
         #endregion
+
+
     }
 }

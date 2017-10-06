@@ -36,5 +36,10 @@ namespace BrainRingGame.ViewModel.ViewModalForUserControls
             _codeBehind.LoadView(ViewType.Thems);
         }
 
+        public void HandleImage(int nomer)
+        {
+            System.Windows.MessageBox.Show(nomer.ToString());
+        }
+
     }
 }

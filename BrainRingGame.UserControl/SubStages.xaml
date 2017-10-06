@@ -40,14 +40,14 @@
                 <StackPanel DockPanel.Dock="Left" x:Name="mainDock"   Style="{DynamicResource StackPanelStyle}">
                     <DockPanel>
                         <Label  FontSize="28" DockPanel.Dock="Right"  Visibility="Hidden"  MouseDown="Label_MouseDown" x:Name="label"  Content="="  Foreground="Red"  FontWeight="ExtraBold" Width="25" Cursor="Hand" HorizontalAlignment="Right" Margin="0,-15,0,0" />
-                        <Label  Visibility="Hidden"  Background="#F0191919"  MouseDown="Label_MouseDown" x:Name="textBlock2Hidden"  Content="=" VerticalAlignment="Top" Height="1" Width="1" Cursor="Hand" HorizontalAlignment="Right"  />
+                        <Label  Visibility="Hidden"  Background="#F0191919"   MouseDown="Label_MouseDown" x:Name="textBlock2Hidden"  Content="=" VerticalAlignment="Top" Height="1" Width="1" Cursor="Hand" HorizontalAlignment="Right"  />
                     </DockPanel>
                     <UniformGrid x:Name="Uniform" >
                         <StackPanel x:Name="Sub1"  Margin="30" Background="Red"  Cursor="Hand" Width="250" Height="250">
                             <StackPanel.InputBindings>
                                 <MouseBinding Command="{Binding NextThems}" MouseAction="LeftClick" />
                             </StackPanel.InputBindings>
-                            <ListView x:Name="listBox" FontSize="20" MouseDown="LeaveImage"  ItemsSource="{Binding Group1}" Width="0"   Height="0" >
+                            <ListView x:Name="listBox" FontSize="20"  ItemsSource="{Binding Group1}" Width="0"   Height="0" >
                                 <ListView.View>
                                     <GridView >
                                         <GridViewColumn  DisplayMemberBinding="{Binding Path= Position, UpdateSourceTrigger=PropertyChanged}" Width="26">№</GridViewColumn>
@@ -66,7 +66,7 @@
                             <StackPanel.InputBindings>
                                 <MouseBinding Command="{Binding NextThems}" MouseAction="LeftClick" />
                             </StackPanel.InputBindings>
-                            <ListView x:Name="listBox1" FontSize="20" MouseDown="LeaveImage" Width="0" ItemsSource="{Binding Group2}"  Height="0"  >
+                            <ListView x:Name="listBox1" FontSize="20"   Width="0" ItemsSource="{Binding Group2}"  Height="0"  >
                                 <ListView.View>
                                     <GridView >
                                         <GridViewColumn  DisplayMemberBinding="{Binding Path= Position, UpdateSourceTrigger=PropertyChanged}" Width="26">№</GridViewColumn>
@@ -88,7 +88,7 @@
                                 <MouseBinding Command="{Binding NextThems}" MouseAction="LeftClick" />
                             </StackPanel.InputBindings>
 
-                            <ListView x:Name="listBox2" FontSize="20" MouseDown="LeaveImage" Width="0" ItemsSource="{Binding Group3}"   Height="0" >
+                            <ListView x:Name="listBox2" FontSize="20"  Width="0" ItemsSource="{Binding Group3}"   Height="0" >
                                 <ListView.View>
                                     <GridView >
                                         <GridViewColumn  DisplayMemberBinding="{Binding Path= Position, UpdateSourceTrigger=PropertyChanged}" Width="26">№</GridViewColumn>
@@ -108,7 +108,7 @@
                             <StackPanel.InputBindings>
                                 <MouseBinding Command="{Binding NextThems}" MouseAction="LeftClick" />
                             </StackPanel.InputBindings>
-                            <ListView x:Name="listBox3" FontSize="20" MouseDown="LeaveImage" Width="0" ItemsSource="{Binding Group4}"  Height="0" >
+                            <ListView x:Name="listBox3" FontSize="20"  Width="0" ItemsSource="{Binding Group4}"  Height="0" >
                                 <ListView.View>
                                     <GridView >
                                         <GridViewColumn  DisplayMemberBinding="{Binding Path= Position, UpdateSourceTrigger=PropertyChanged}" Width="26">№</GridViewColumn>

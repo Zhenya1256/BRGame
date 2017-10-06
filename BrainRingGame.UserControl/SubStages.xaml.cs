@@ -21,6 +21,7 @@ namespace BrainRingGame.UserControl
     /// </summary>
     public partial class SubStages : System.Windows.Controls.UserControl
     {
+        public Action<int> ActionEvent;
         private bool _isClose;
 
         public SubStages()
@@ -30,7 +31,25 @@ namespace BrainRingGame.UserControl
 
         private void LeaveImage(object sender, MouseEventArgs e)
         {
+            if (sender is Image)
+            {
+                Image img = (Image)sender;
+                int nomer = 0;
 
+                foreach (var s in img.Name)
+                {
+                    if (Char.IsDigit(s))
+                    {
+                        nomer = int.Parse(s.ToString());
+                        break;
+                    }
+                }
+
+                if (ActionEvent != null)
+                {
+                    ActionEvent.Invoke(nomer);
+                }
+            }
         }
 
         private void Label_MouseDown(object sender, RoutedEventArgs e)

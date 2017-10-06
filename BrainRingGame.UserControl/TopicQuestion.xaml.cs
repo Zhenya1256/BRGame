@@ -23,9 +23,11 @@ namespace BrainRingGame.UserControl
     /// </summary>
     public partial class TopicQuestion : System.Windows.Controls.UserControl
     {
+        public Action<Key> KeyDown;
+       
+
         private AddImageControl _imageControl;
         private ChangeImage _changeImage;
-        public Action<Key> KeyDown;
         private int _index;
 
         public TopicQuestion()
@@ -37,11 +39,19 @@ namespace BrainRingGame.UserControl
             InititialList();
         }
 
+        #region Init
+
         private void InitialImage()
+        {
+            ImageDefault();
+
+        }
+
+        private void ImageDefault()
         {
             //
             System.Drawing.Image image = BrainRingGame.Ui.Wpf.Recourses.Components
-                .Properties.Resources.QuestionMp3;
+                .Properties.Resources.AddQuestion;
             //
 
             MemoryStream streamImage = new MemoryStream();
@@ -55,6 +65,7 @@ namespace BrainRingGame.UserControl
             streamImage = _changeImage.ChangeSize(streamImage, width, height);
 
             QuestionImage.Source = _imageControl.AddControlImage(streamImage);
+
         }
 
         private void InititialList()
@@ -66,6 +77,10 @@ namespace BrainRingGame.UserControl
                 listViewCommand.SelectedIndex = _index;
             }
         }
+
+        #endregion
+
+        #region EventKey
 
         public void HandleKeyPress(Key key)
         {
@@ -98,6 +113,7 @@ namespace BrainRingGame.UserControl
             }
             listViewCommand.SelectedIndex = _index;
         }
+
         private void DownKey()
         {
             if (_index + 1 < listViewCommand.Items.Count)
@@ -111,5 +127,7 @@ namespace BrainRingGame.UserControl
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
         }
+
+        #endregion
     }
 }
