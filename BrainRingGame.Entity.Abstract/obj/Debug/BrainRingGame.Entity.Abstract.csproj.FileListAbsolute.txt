@@ -3,8 +3,15 @@ c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRin
 c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.csprojResolveAssemblyReference.cache
 c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.dll
 c:\users\student_pc\documents\visual studio 2015\Projects\BrainRingGame\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\BrainRingGame.Entity.Abstract.dll.config
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\BrainRingGame.Entity.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\BrainRingGame.Entity.Abstract.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\Bender.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\Flexo.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\SimpleConfig.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\Bender.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\Flexo.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\bin\Debug\SimpleConfig.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.Entity.Abstract\obj\Debug\BrainRingGame.Entity.Abstract.pdb

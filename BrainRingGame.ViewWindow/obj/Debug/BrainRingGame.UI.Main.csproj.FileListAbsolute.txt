@@ -5,17 +5,22 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\Brain
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.MessegeHolder.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.UserControl.exe
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.ViewModel.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\SimpleConfig.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.BL.Impl.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Style.exe
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Entity.Impl.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Ui.Wpf.Recourses.Components.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.HelpWindowForms.exe
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.BL.Abstract.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\SharpCompress.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Entity.Abstract.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Entity.Abstract.dll.config
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.MessegeHolder.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.UserControl.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.UserControl.exe.config
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.ViewModel.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.ViewModel.dll.config
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\SimpleConfig.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.BL.Impl.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Style.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.Style.exe.config
@@ -36,4 +41,3 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\obj\Debug\Brain
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\obj\Debug\BrainRingGame.UI.Main.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\obj\Debug\BrainRingGame.ViewWindow.exe
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\obj\Debug\BrainRingGame.ViewWindow.pdb
-D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.ViewWindow\bin\Debug\BrainRingGame.ViewModel.dll.config

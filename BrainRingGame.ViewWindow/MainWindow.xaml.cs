@@ -42,7 +42,7 @@ namespace BrainRingGame.UI.Main
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadView(ViewType.ChooseStage);
+            LoadView(ViewType.Setting);
         }
 
         private void MainWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)

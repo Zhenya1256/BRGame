@@ -30,7 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bender, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bender.3.0.1.0\lib\Bender.dll</HintPath>
+    </Reference>
+    <Reference Include="Flexo, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\flexo.1.0.3.0\lib\Flexo.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleConfig, Version=1.0.37.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleConfig.1.0.37.0\lib\SimpleConfig.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Config\ConfigColorItem.cs" />
+    <Compile Include="Common\Config\DrawConfig.cs" />
+    <Compile Include="Common\Config\DrawConfigItem.cs" />
+    <Compile Include="Common\Config\GameStageConfigSection.cs" />
+    <Compile Include="Common\Config\ImageConfigItem.cs" />
+    <Compile Include="Common\Config\QuestionConfigItem.cs" />
+    <Compile Include="Common\Config\StageItemConfig.cs" />
+    <Compile Include="Common\Config\SubStageItemConfig.cs" />
+    <Compile Include="Common\Config\TextConfigItem.cs" />
+    <Compile Include="Common\Config\UploadConfiguration.cs" />
+    <Compile Include="Common\Config\UploadConfigurationItem.cs" />
     <Compile Include="Common\Results\IDataResult.cs" />
     <Compile Include="Common\Results\IResult.cs" />
     <Compile Include="Common\Results\StageChangeResults\IStageChangeDataResult.cs" />
@@ -48,6 +69,7 @@
     <Compile Include="Component\IDrawFileData.cs" />
     <Compile Include="Component\IFileData.cs" />
     <Compile Include="Component\IStageComponent.cs" />
+    <Compile Include="EntityHolders\ConfigurationHolder.cs" />
     <Compile Include="EntityHolders\GameEntityHolder.cs" />
     <Compile Include="Enums\DrawFileComponentType.cs" />
     <Compile Include="Enums\ChangeStateType.cs" />
@@ -72,7 +94,10 @@
     <Compile Include="Enums\TeamType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

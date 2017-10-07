@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
+    <Reference Include="SharpCompress">
+      <HintPath>..\..\MyVrsionWpfGame-master\WpfGame\bin\Debug\SharpCompress.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -45,6 +48,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archive\ArchiveLoader.cs" />
+    <Compile Include="Archive\BuildGame.cs" />
+    <Compile Include="Archive\SaveTempFile.cs" />
+    <Compile Include="Archive\ValidataArchive.cs" />
     <Compile Include="GameProcessors\GameInitializeProcessor.cs" />
     <Compile Include="GameProcessors\StateChangeProcessor.cs" />
     <Compile Include="Handlers\TeamGroupHandler.cs" />

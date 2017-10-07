@@ -14,9 +14,13 @@ D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRin
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Abstract.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Impl.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\SharpCompress.dll
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\SimpleConfig.dll
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.BL.Abstract.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Abstract.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Abstract.dll.config
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\BrainRingGame.Entity.Impl.pdb
+D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\bin\Debug\SimpleConfig.pdb
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.csprojResolveAssemblyReference.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.csproj.CoreCompileInputs.cache
 D:\MyProject_C#\BrainRingWpfGame-master\BrainRingGame.BL.Impl\obj\Debug\BrainRingGame.BL.Impl.dll

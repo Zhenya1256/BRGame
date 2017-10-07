@@ -1,4 +1,6 @@
-﻿using BrainRingGame.BL.Impl.Handlers;
+﻿using BrainRingGame.BL.Impl.Archive;
+using BrainRingGame.BL.Impl.Handlers;
+using BrainRingGame.Entity.Abstract.Common.Results;
 using BrainRingGame.Entity.Abstract.EntityHolders;
 using BrainRingGame.Entity.Abstract.Enums;
 using BrainRingGame.Ui.Wpf.Common.Recourses.Help;
@@ -83,69 +85,32 @@ namespace BrainRingGame.Ui.Wpf.Common.Recourses.ViewModel.ViewModalForUserContro
 
             await Task.Factory.StartNew(() =>
             {
-                List<string> files = null;
-                try
-                {
-                    files = Read(path);
-                }
-                catch (Exception)
-                {
-                    // message =
-                    //ErrorMessageHolder.GetErrorMessag(ErrorType.NonFormat);
-                }
-
-                if (files != null)
-                {
+              
                     //FilesEntety file = new FilesEntety();
                     //file.PathArchiv = path;
                     //file.PathFile = files;
 
-                    //ArchiveLoader ar = new ArchiveLoader();
-                    //dataResult = ar.DataResult(file);
-                    //LoaderEntyity load = dataResult.Data;
-                    ////  Files.filesStream = load.FilesData;
+                    ArchiveLoader ar = new ArchiveLoader();
+                    IResult result = ar.Loader(path);
 
-                    //if (dataResult.Data == null)
-                    //{
-                    //    message = dataResult.Message;
-                    //    IsSettingPlay = false;
-                    //}
-                    //else
-                    //{
-                    //    message = dataResult.Message;
-                    //    IsSettingPlay = true;
-                    //}
-                }
-
-                //if (message.Equals(String.Empty))
-                //{
-                //    message =
-                //    ErrorMessageHolder.GetErrorMessag(ErrorType.NonFormat);
-                //}
+                    if (!result.Success)
+                    {
+                        message = result.Message;
+                    }
+                    else
+                    {
+                        message = "OK";
+                    }
+                 
+                
 
             }).ContinueWith(result =>
             {
                 //_downLoad.textBlock.Text = message;
                 //_downLoad.ProgressBar.Visibility = Visibility.Hidden;
+                MessageBox.Show(message);
+                _downLoad.Close();
             }, TaskScheduler.FromCurrentSynchronizationContext());
-        }
-
-        public List<string> Read(string location)
-        {
-            List<string> filesStream = null;
-
-            using (Stream stream = File.OpenRead(location))
-            {
-                //IReader reader = ReaderFactory.Open(stream);
-                //filesStream = new List<string>();
-
-                //while (reader.MoveToNextEntry())
-                //{
-                //    filesStream.Add(reader.Entry.FilePath);
-                //}
-            }
-
-            return filesStream;
         }
 
         public ICommand AddCommand
